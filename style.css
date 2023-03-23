@@ -56,7 +56,6 @@ body {
 
 .contentContainer {
   margin-top: 15px;
-  background-color: #102542;
   padding-top: 10px;
   padding-bottom: 10px;
 }
@@ -66,7 +65,9 @@ body {
   flex-direction: row;
   place-content: center;
   vertical-align: top;
-  margin-bottom: 10px;
+  background-color: #102542;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .taskName {

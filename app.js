@@ -11,9 +11,17 @@ addButton.addEventListener("click", () => {
         ${document.querySelector('input').value}
       </span>
       <button class="deleteTask">
-        Delete
+        Done
       </button>
     </div>
-    `
+    `;
+    document.querySelector('input').value = "";
+
+    let deleteTask = document.querySelectorAll('.deleteTask');
+    for(let i=0;i<deleteTask.length;i++){
+      deleteTask[i].onclick = function() {
+        this.parentNode.remove();
+      }
+    }
   }
 });
